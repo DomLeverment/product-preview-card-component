@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Fraunces", serif;
+    font-family: "Montserrat", sans-serif;
+  }
+  
+  body {
+    background-color: #F2EAE2;
+    padding: 175px 420px;
+    min-height: 100vh;
+    min-width: 100vw;
+  }
+  
+  .main-card {
+    display: flex;
+    width: 600px;
+    border-radius: 7.5px;
+    background-color: #fff;
+  }
+  
+  .product-image {
+    flex: 1;
+  }
+  
+  .product-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-top-left-radius: 7.5px;
+    border-bottom-left-radius: 7.5px;
+  }
+  
+  .right-container {
+    width: 300px;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .tag {
+    font-family: "Montserrat", sans-serif;
+    font-size: 12px;
+    color: #6C7289;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+  
+  .main-copy h1 {
+    font-family: "Fraunces", serif;
+    font-size: 32px;
+    font-weight: bold;
+    color: #1C232B;
+    margin-bottom: 24px;
+  }
+  
+  .main-copy p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-weight: medium;
+    margin-bottom: 29px;
+    color: #6C7289;
+    line-height: 1.8em;
+  }
+  
+  .price-container {
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 30px;
+  }
+  
+  .discount-price {
+    color: #3D8168;
+    font-family: "Fraunces", serif;
+    font-size: 32px;
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  
+  .main-price {
+    font-family: "Montserrat", sans-serif;
+    font-size: 13px;
+    text-decoration: line-through;
+    color: #6C7289;
+  }
+  
+  button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #3D8168;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    width: 100%;
+    height: 48px;
+    color: #fff;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button img {
+    margin-right: 10px;
+    height: 16px; 
+  }  
+
+  button:hover{
+    cursor: pointer;
+    background-color: #1A4032;
+  }
+  
+  @media (max-width: 430px) {
+    body {
+      padding: 16px 28px;
+    }
+  
+    .main-card {
+      flex-direction: column;
+      width: 100%;
+      height: auto;
+    }
+  
+    .product-image img {
+      height: 246px;
+      width: 100%;
+      border-bottom-left-radius: 0;
+      border-top-right-radius: 5px;
+    }
+  
+    .right-container {
+      width: 100%;
+      padding: 20px;
+    }
+  }
+
